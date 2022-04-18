@@ -38,6 +38,89 @@ body {
       }
     }
   }
+
+  &.sidebar--right {
+    .follow-request {
+      .follow-request__header {
+        border-bottom: 1px solid #eeeaea;
+      }
+
+      .follow-request__body {
+        .follow-request__item {
+          .follow-request__item--img {
+            margin-right: .3rem;
+          }
+
+          .follow-request__item--name {
+            color: #3f3c3c;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              color: #1c1b1b;
+              text-decoration: none;
+            }
+
+            h5 {
+              font-size: 1rem;
+            }
+
+            h6 {
+              font-size: .8rem;
+              color: gray;
+            }
+          }
+
+          .follow-request__item--action {
+            .btn {
+              font-size: .8rem;
+            }
+          }
+        }
+      }
+    }
+
+    .friends-list {
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 1.5rem;
+        }
+      }
+
+
+      .friends {
+        .friends__item {
+          .friends__item--name {
+            color: #3f3c3c;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              color: #1c1b1b;
+              text-decoration: none;
+            }
+
+            h5 {
+              font-size: .9rem;
+            }
+          }
+
+          .time-info {
+            font-size: .8rem;
+            color: #3f3c3c;
+
+            .material-icons {
+              font-size: .9rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .feed-content {
