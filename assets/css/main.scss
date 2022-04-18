@@ -1,1 +1,88 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+  padding: .5rem;
+  position: relative;
+
+  .sidebar--left {
+    position: fixed;
+
+    ul {
+      li {
+        margin-bottom: 3rem;
+
+        a {
+          color: #000;
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-decoration: none;
+          transition: all .2s ease-in-out;
+
+          &:hover {
+            color: #000;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feed-content {
+  .content {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+
+    .content__header {
+      margin-bottom: 2rem;
+
+      .author-info {
+        .author-name {
+          h5 {
+            font-size: 1rem
+          }
+        }
+
+        .meta-info {
+          font-size: .8rem;
+          color: gray;
+        }
+      }
+    }
+
+    .content__body {
+      .content__body--title {
+        margin-bottom: 1.5rem;
+
+        h4 {
+          font-size: 1rem;
+
+        }
+      }
+
+      .content__body--text {
+        font-size: .9rem;
+      }
+    }
+
+    .content__action {
+      border-bottom: 1px solid #eeeaea;
+      border-top: 1px solid #eeeaea;
+      font-size: .9rem;
+
+      .content__action--comment, .content__action--share {
+        color: grey;
+      }
+
+      .material-icons {
+        font-size: 1rem;
+        margin-right: .3rem;
+      }
+    }
+  }
+}
